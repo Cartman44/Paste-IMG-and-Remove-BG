@@ -4,6 +4,8 @@ A lightweight but powerful Python utility that monitors your clipboard for image
 Flawless Background Remover ✂️
 A lightweight but powerful Windows utility that automatically removes backgrounds from images in your clipboard using AI locally. Copy an image, wait a second, and paste the transparent result anywhere.
 
+<img src="assets/demo.gif" width="600" />
+
 🚀 Features
 Automatic Detection: Monitors your clipboard for new images.
 

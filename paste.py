@@ -143,16 +143,16 @@ class FlawlessBackgroundRemover:
         self.ignore_next_change = False
 
     def create_tray(self):
-        icon_path = "icon.png"
+        icon_path = "assets/icon.png"
         if os.path.exists(icon_path):
             try:
                 icon = Image.open(icon_path)
                 icon = icon.resize((64, 64)) 
             except Exception as e:
-                print(f"Nu am putut încărca icon.png: {e}")
+                print(f"icon.png missing: {e}")
                 icon = Image.new('RGB', (64, 64), color='cyan')
         else:
-            print("⚠️ icon.png nu a fost găsit. Folosesc iconița default.")
+            print("using cyan (it s cool)")
             icon = Image.new('RGB', (64, 64), color='cyan')
 
         menu = pystray.Menu(pystray.MenuItem("Exit", self.exit_app))
